@@ -289,7 +289,7 @@ button{
 
 @media screen and (min-width:768px){
     .main-h {
-        max-width: 768px;
+      
             padding-top: 112px;
             padding-bottom: 112px;
             background-image:
@@ -319,7 +319,7 @@ button{
 
         @media screen and (min-width:1158px){
         .main-h {
-            max-width: 1158px;
+           
         padding-top: 188px;
         padding-bottom: 188px;
         background-image:
@@ -345,13 +345,22 @@ button{
 .portfolio {
     margin:96px auto;
     }
+
+.portfolio-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .portfolio-link-tittle {
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 36px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    margin-bottom: 8px;
+    
+   
     }
 
     .portfolio-link-icon{
@@ -373,13 +382,15 @@ button{
  }
  @media screen and (min-width:768px){
            .portfolio-link-tittle {
+            
         font-size: 36px;
     }
            .portfolio-list {
                
                flex-direction: row;
                flex-wrap: wrap;
-               gap: 24px;
+               column-gap: 24px;
+               row-gap: 72px;
     }
            .portfolio-link{
             width: calc((100% - 48px)/2);
@@ -391,11 +402,17 @@ button{
     .portfolio {
             margin: 120px 0;
         }
+
+                 .portfolio-link-tittle {
+                     font-weight: 500;
+                     font-size: 20px;
+                 }
     .portfolio-list {
             align-items: flex-start;
             }
     
         .portfolio-link {
+            display: block;
             width: calc((100% - 72px)/4);
         }
     
@@ -464,9 +481,16 @@ button{
  .our-team-img {
      max-width: 264px;
      border-radius: 0px 0px 4px 4px;
-     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    
      background: #fff;
  }
+
+ .our-team-img:hover,
+ .our-team-img:focus{
+box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+ }
+ 
+
  .our-team-social {
      display: flex;
      align-items: center;
@@ -507,6 +531,7 @@ button{
         }
         .our-team-img{
             width: calc((100% - 48px)/2);
+            box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
         }
 }
 
@@ -518,7 +543,12 @@ button{
             flex-direction: row;
             gap: 24px;
     }
-}
+          .our-team-img {
+            
+              box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+          }
+          }
+
 
 /* our portfolio */
 
@@ -737,7 +767,7 @@ button{
     flex-direction: column;
     align-items:center;
     justify-content: center;
-    gap: 24px;
+    gap: 16px;
 
 }
 
