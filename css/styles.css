@@ -324,6 +324,7 @@ button{
         background-image:
             linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/people-office1.jpg);
+            max-width: 1440px;
            
         }
               
@@ -332,7 +333,7 @@ button{
                 background-image:
                         linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
                         url(../images/people-office2x.jpg);
-                        max-width: 1440px;
+                        
             }
         }
                    .button {
@@ -343,7 +344,7 @@ button{
 /* .portfolio */
 
 .portfolio {
-    padding:96px auto;
+    padding:96px;
     }
 
 .portfolio-link{
@@ -607,10 +608,6 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 .our-portfolio-link {
     position: relative;
     cursor: pointer;
-        box-shadow:
-                0 2px 1px 0 rgba(46, 47, 66, 0.08),
-                0 1px 1px 0 rgba(46, 47, 66, 0.16),
-                0 1px 6px 0 rgba(46, 47, 66, 0.08);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
@@ -675,7 +672,13 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     }
 
     .our-portfolio-link {
+        box-shadow: none;
         width: calc((100% - 48px)/3);
+    }
+    .our-portfolio-link:hover{
+        box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+        0 1px 1px 0 rgba(46, 47, 66, 0.16),
+        0 1px 6px 0 rgba(46, 47, 66, 0.08);
     }
 
 }
@@ -847,8 +850,8 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
         flex-wrap: wrap;
         
         justify-content: flex-start;
-        row-gap: 24px;
-        column-gap: 72px;
+        row-gap: 72px;
+        column-gap: 24px;
 
     }
 .footer-logo-st {
