@@ -325,6 +325,7 @@ button{
             linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/people-office1.jpg);
             max-width: 1440px;
+            margin: 0 auto;
            
         }
               
@@ -344,7 +345,7 @@ button{
 /* .portfolio */
 
 .portfolio {
-    padding:96px;
+    padding:96px 0;
     }
 
 .portfolio-link{
@@ -534,7 +535,8 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
             flex-direction: row;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 64px;
+            column-gap: 24px;
+            row-gap: 64px;
         }
         .our-team-img{
             width: calc((100% - 48px)/2);
@@ -1209,6 +1211,10 @@ flex-direction: column;
     gap: 40px;
 }
 
+.mobile_menu_address{
+    font-style: normal;
+}
+
 
 
 .nav-link-mobile{
@@ -1233,7 +1239,7 @@ font-weight: 700;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
-        color: #4d5ae5;
+      
 }
 .contacts-list.mobile{
     display: flex;
@@ -1247,9 +1253,13 @@ font-weight: 700;
     gap: 40px;
     width: 100%;
 }
+.contacts-link.mobile.phone{
+color: #4d5ae5;
+}
 
-
-
+.contacts-link.mobile.email{
+    color: #434455;
+}
 
 @media screen and (min-width:768px){
 .mobile-menu{
