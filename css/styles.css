@@ -194,8 +194,7 @@ button{
     display: block;
     font-size: 12px;
     line-height: 1.17;
-    letter-spacing: 0.04
-    em;
+    letter-spacing: 0.04em;
     color: #434455;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -333,6 +332,7 @@ button{
                 background-image:
                         linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
                         url(../images/people-office2x.jpg);
+                        max-width: 1440px;
             }
         }
                    .button {
@@ -343,7 +343,7 @@ button{
 /* .portfolio */
 
 .portfolio {
-    margin:96px auto;
+    padding:96px auto;
     }
 
 .portfolio-link{
@@ -374,7 +374,7 @@ button{
             width: 100%;
     }
     .portfolio-link-tittle-text {
-     font-weight: 400;
+     font-weight: 500;
      font-size: 16px;
      line-height: 1.5;
      letter-spacing: 0.02em;
@@ -393,6 +393,7 @@ button{
                row-gap: 72px;
     }
            .portfolio-link{
+            align-items: start;
             width: calc((100% - 48px)/2);
            
     }
@@ -400,13 +401,18 @@ button{
 
 @media screen and (min-width:1158px){
     .portfolio {
-            margin: 120px 0;
+            padding: 120px 0;
         }
 
                  .portfolio-link-tittle {
                      font-weight: 500;
                      font-size: 20px;
                  }
+                 .portfolio-link-tittle-text {
+                     font-weight: 500;
+                    }
+
+
     .portfolio-list {
             align-items: flex-start;
             }
@@ -527,7 +533,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
             flex-direction: row;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 24px;
+            gap: 64px;
         }
         .our-team-img{
             width: calc((100% - 48px)/2);
@@ -537,11 +543,12 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 
 @media screen and (min-width:1158px){
     .our-team {
-            margin: 120px 0;
+            padding: 120px 0;
         }
     .our-team-list {
             flex-direction: row;
-            gap: 24px;
+            row-gap: 48px;
+            column-gap: 24px;
     }
           .our-team-img {
             
@@ -600,6 +607,10 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 .our-portfolio-link {
     position: relative;
     cursor: pointer;
+        box-shadow:
+                0 2px 1px 0 rgba(46, 47, 66, 0.08),
+                0 1px 1px 0 rgba(46, 47, 66, 0.16),
+                0 1px 6px 0 rgba(46, 47, 66, 0.08);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
