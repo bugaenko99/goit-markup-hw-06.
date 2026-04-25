@@ -410,6 +410,7 @@ button{
                  .portfolio-link-tittle {
                      font-weight: 500;
                      font-size: 20px;
+                    text-align: start;
                  }
                  .portfolio-link-tittle-text {
                      font-weight: 400;
@@ -551,8 +552,8 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
         }
     .our-team-list {
             flex-direction: row;
-            row-gap: 48px;
-            column-gap: 24px;
+            
+            gap: 24px;
     }
           .our-team-img {
             
@@ -846,6 +847,12 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 }
 
 @media screen and (min-width:768px){
+    .footer-container{
+padding-left: 108px;
+padding-right: 108px;
+
+
+    }
 .footer-content {
      flex-direction: row;
         flex-wrap: wrap;
@@ -887,7 +894,33 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
         padding: 100px 0;
         ;
     }
+
+    .footer-content{
+            
+            align-items: baseline;
+            justify-content: flex-start;
+    }
+                                .footer-logo-st {
+                                    display: block;
+                                    margin-right: 120px;
+                                }
+                
+                                .footer_form {
+                
+                
+                                    align-items: flex-end;
+                                    gap: 24px;
+                
+                                }
+                
+                                .footer_mail_form {
+                
+                                    margin-left: auto;
+                                }
+
         }
+
+    
 
         /* modal */
 
