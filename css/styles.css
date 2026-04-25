@@ -889,6 +889,11 @@ padding-right: 108px;
     }
 
         @media screen and (min-width:1158px){
+
+.footer-container{
+    padding: 0;
+}
+
 .page-footer {
        
         padding: 100px 0;
